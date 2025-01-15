@@ -16,5 +16,5 @@ class ArticleView(ListCreateAPIView): #реализует post and get запр�
         return serializer.save(author=author)
 
 class SingleArticleView(RetrieveUpdateDestroyAPIView):#реализует методы put and patch and delete
-    queryset = Article.objects.all()
+    queryset = Article.objects.all() 
     serializer_class = ArticleSerializer
