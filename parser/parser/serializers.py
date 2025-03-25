@@ -1,5 +1,6 @@
 from datetime import datetime
 from rest_framework import serializers
+from parser import models
 
 class Comment:
     def __init__(self, email, content, created=None):
